@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Contacto
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 col-sm>
+        <div>
+         <img [src]="this.image" />
+        </div>
+      </ion-col>
+      <ion-col col-12 col-sm>
+        <div>
+          <img [src]="this.image" />
+        </div>
+      </ion-col>
+      <ion-col col-12>
+        <div>
+          <ion-label>Selecciona fecha: {{ fecha }}</ion-label>
+          <ion-datetime 
+            (ionCancel)="pickerCancel($event)"
+            cancelable="false" 
+            displayFormat="h:mm A" 
+            pickerFormat="YYYY M DD A" 
+            [(ngModel)]="fecha">
+          </ion-datetime>
+        </div>
+      </ion-col>
+      <ion-col col-12>
+        <div>
+          <ion-card>
+          <ion-card-header>
+            Meetup Ruby
+          </ion-card-header>
+          <ion-card-content>
+            <img [src]="this.image" />
+            No te lo puedes perder
+            <button ion-button>Registrate</button>
+          </ion-card-content>
+        </ion-card>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          5
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          6
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          7
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          8
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          9
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          10
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          11
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          12
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

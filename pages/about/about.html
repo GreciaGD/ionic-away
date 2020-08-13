@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar> 
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>   
+    <ion-title>
+      Agregar Productos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>  
+  <form [formGroup]="addProductsForm" (ngSubmit)="onSubmit()">
+    <ion-list>   
+      <ion-item>
+        <ion-label floating>Nombre</ion-label>
+        <ion-input type="text" name="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Marca</ion-label>
+        <ion-input type="text" name="brand"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Imagen</ion-label>
+        <ion-input type="text" name="thumbImage"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Ingrese Precio</ion-label>
+        <ion-input type="number" name="price"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Precio de oferta</ion-label>
+        <ion-input type="number" name="salePrice"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Ingrese Stock</ion-label>
+        <ion-input type="number" name="stock"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Descripción</ion-label>
+        <ion-input type="text" name="description"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Especificación</ion-label>
+        <ion-input type="text" name="specification"></ion-input>
+      </ion-item>
+    </ion-list>
+  
+    <ion-row>
+      <ion-col>
+        <button block ion-button type="submit">Guardar</button>
+      </ion-col>
+      <ion-col>
+        <button block ion-button type="button" color="light">Cancelar</button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
