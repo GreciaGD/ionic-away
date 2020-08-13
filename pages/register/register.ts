@@ -14,6 +14,7 @@ export class LoginPage{
 
   IniciarSesion($event){
     // alert("Funciona el boton");
-    this.loginService.login(this.login.email, this.login.password);
+    // this.loginService.login(this.login.email, this.login.password);
+
   }
 }

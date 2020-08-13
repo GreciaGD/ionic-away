@@ -18,6 +18,7 @@ import { LoaderController } from './providers/loader.controller';
 
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { LoginService } from './services/login.service';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
     SplashScreen,  
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ProductService,
-    LoaderController
+    LoaderController,
+    LoginService
   ]
 })
 export class AppModule {}
